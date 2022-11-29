@@ -1,4 +1,5 @@
 "use strict";
+var exports = {};
 Object.defineProperty(exports, "__esModule", { value: true });
 var User_1 = require("./User");
 var Company_1 = require("./Company");
