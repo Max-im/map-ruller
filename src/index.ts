@@ -1,7 +1,11 @@
 import { User } from './User';
 import { Company } from './Company';
 import { GMap } from './GMap';
+import { Faker } from './Faker';
 
 const map = new GMap('map');
-map.addMarker(new User());
-map.addMarker(new Company());
+const user = new User(new Faker());
+const company = new Company(new Faker());
+
+map.addMarker(user);
+map.addMarker(company);
