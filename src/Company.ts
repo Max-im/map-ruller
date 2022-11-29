@@ -1,4 +1,4 @@
-const { Idb } = require('./Faker');
+import { Idb } from './Faker';
 import { Mappable } from './GMap';
 
 export class Company implements Mappable {
@@ -9,7 +9,7 @@ export class Company implements Mappable {
     lng: number;
   };
 
-  constructor(db: typeof Idb) {
+  constructor(db: Idb) {
     this.companyName = db.getCompanyName();
     this.catchPhrase = db.getCompanyDescr();
     this.location = db.getLocation();

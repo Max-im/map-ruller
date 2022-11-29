@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Company = void 0;
-var Idb = require('./Faker').Idb;
 var Company = /** @class */ (function () {
     function Company(db) {
         this.companyName = db.getCompanyName();
